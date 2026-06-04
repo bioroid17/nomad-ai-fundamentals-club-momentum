@@ -6,6 +6,7 @@
 #links span {
   padding: 4px;
   border-radius: 8px;
+  color: lightyellow;
 }
 #add-link:hover,
 #links span:hover {
@@ -23,6 +24,15 @@
   top: 70px;
   left: 20px;
   padding: 20px;
+}
+.link-name {
+  color: lightyellow;
+}
+.favorite-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 #favorites {
   max-height: 150px;

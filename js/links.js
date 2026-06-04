@@ -47,6 +47,7 @@ function deleteLink(event) {
 
 function paintLink(link) {
   const div = document.createElement("div");
+  div.classList.add("favorite-link");
   div.id = link.id;
   const anchor = document.createElement("a");
   const nameVal = link.name;
@@ -56,6 +57,7 @@ function paintLink(link) {
   image.src = `https://s2.googleusercontent.com/s2/favicons?domain_url=${urlVal}`;
   anchor.appendChild(image);
   const span = document.createElement("span");
+  span.classList.add("link-name");
   const emoji = document.createElement("button");
   span.innerText = nameVal;
   emoji.innerText = "❌";
