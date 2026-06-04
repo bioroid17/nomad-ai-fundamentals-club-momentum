@@ -1,9 +1,9 @@
-const images = [];
-
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const vh = window.innerHeight;
+const vw = window.innerWidth;
 
 const bgImage = document.createElement("img");
-bgImage.src = `img/${chosenImage}`;
+bgImage.src = `https://picsum.photos/${vw}/${vh}`;
 bgImage.id = "background";
+console.log(vw, vh);
 
 document.body.appendChild(bgImage);
